@@ -68,9 +68,13 @@ int main()
 		std::cout << "-------------------------------------\n";
 
 		counter++;
-
 	}
 
+	float speed = 10.0f;
+	std::cout << "Object #1" << std::endl;
+	objects[0].position = objects[0].position + Vector2D::Up() * speed;
+
+	std::cout << objects[0].position << std::endl;
 }
 
 
